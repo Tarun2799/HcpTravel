@@ -41,24 +41,28 @@
       <form action="" class="booking-form">
         <div class="form-group">
           <label for="origin">From</label>
-          <input type="text" id="origin" placeholder="Origin">
+          <input type="text" id="origin" placeholder="Origin" required>
         </div>
         <div class="form-group">
             <label for="destination">To</label>
-            <input type="text" id="destination" placeholder="Destination">
+            <input type="text" id="destination" placeholder="Destination" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
         </div>
         <div class="form-group">
           <label for="adult">Adult</label>
-          <input type="text" id="adult" placeholder="Adult">
+          <input type="text" id="adult" placeholder="Adult" required>
         </div>
         <div class="form-group">
             <label for="child">Child</label>
-            <input type="text" id="child" placeholder="Child">
+            <input type="text" id="child" placeholder="Child" required>
         </div>
         <div class="form-group">
           <label for="class">Class</label>
           <!-- <input type="text" id="class" placeholder="Class"> -->
-          <select id="class" name="class">
+          <select id="class" name="class" required>
             <option value="economy">Economy</option>
             <option value="business">Business</option>
             <option value="firstClass">First Class</option>
@@ -66,11 +70,11 @@
         </div>
         <div class="form-group">
             <label for="departure">Departure</label>
-            <input type="date" id="departure">
+            <input type="date" id="departure" required>
         </div>
         <div class="form-group">
             <label for="return">Return</label>
-            <input type="date" id="return">
+            <input type="date" id="return" required>
         </div>
         <input type="submit" id="searchBtn" value="Sumbit"></input>
       </form>
@@ -82,6 +86,19 @@
 
   <div class="slider">
     <div class="slider-track">
+      <div class="slide">
+        <img src="./assets/delay.jpeg" alt="Flight Change">
+        <p>Flight Change</p>
+      </div>
+      <div class="slide">
+        <img src="./assets/change.jpeg" alt="Change Flight Date">
+        <p>Change Flight Date</p>
+      </div>
+      <div class="slide">
+        <img src="./assets/flightChange.jpeg" alt="Flight Delay">
+        <p>Flight Delay</p>
+      </div>
+      <!-- Repeat slides to create the infinite effect -->
       <div class="slide">
         <img src="./assets/delay.jpeg" alt="Flight Change">
         <p>Flight Change</p>
@@ -208,9 +225,9 @@
           <!-- Footer Column 4: Contact -->
           <div class="footer-column">
               <h4>Contact Us</h4>
-              <p><strong>Email:</strong> support@hcptravel.com</p>
+              <p><strong>Email:</strong> Booking@hcptravel.com</p>
               <p><strong>Phone:</strong> +1-888-652-3933</p>
-              <p><strong>Address:</strong> 123 Travel Lane, Global City, World</p>
+              <p><strong>Address:</strong> hcp travel reservations 259 Gamble Ave East York. ON M4J 2P4 </p>
           </div>
       </div>
   

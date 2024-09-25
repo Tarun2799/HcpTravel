@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-  
+    box-sizing: border-box;
   }
   
   html {
@@ -208,7 +208,7 @@
   .form-section{
     position: absolute;
     top: 80%;
-    left: 13%;
+    left: 10%;
     padding: 3rem 2rem;
     background-color: white;
     display: flex;
@@ -259,7 +259,7 @@
       color: rgb(116, 116, 116);
     }
   
-    #origin, #destination, #departure, #return, #adult, #child,#class{
+    #origin, #destination, #departure, #return, #adult, #child,#class, #email{
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 5px;
@@ -530,18 +530,19 @@
   
   
   /* Mobile screens (up to 768px) */
-  @media (max-width: 1024px) {
+  @media (max-width: 1800px) {
   
     #number{
       display: none;
     }
     .form-section {
       top: 90%;
-      left: 5%;
+      left: 15%;
+      transition: all 0.5s ease-in-out; 
       padding: 1.5rem 1rem;
       flex-direction: column;
       width: 75%;
-      border-radius: 0;
+      border-radius: 1rem;
     }
   
     .booking-form {
@@ -572,6 +573,46 @@
       display: block;
       width: 100vw;
       height: 50vh;
+    }
+  }
+
+  /* @media (min-width: 1500px) {
+    .form-section {
+      top: 90%;
+      left: 15%;
+      transition: all 0.5s ease-in-out; 
+    }
+  }
+
+  @media (min-width: 1800px) {
+    .form-section {
+      top: 90%;
+      left: 15%;
+      transition: all 0.5s ease-in-out; 
+    }
+  } */
+
+  @media (min-width: 1800px) {
+    .form-section {
+      top: 90%;
+      left: 18%;
+      transition: all 0.5s ease-in-out; 
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .form-section {
+      top: 90%;
+      left: 20%;
+      transition: all 0.5s ease-in-out; 
+    }
+  }
+
+  @media (min-width: 2200px) {
+    .form-section {
+      top: 90%;
+      left: 25%;
+      transition: all 0.5s ease-in-out; 
     }
   }
   
