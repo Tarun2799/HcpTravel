@@ -274,8 +274,12 @@
   }
   
   .mobilesection{
-    display: none;
+      display: block;
+      width: 100vw;
+      height: 30vh;
   }
+
+  
   .slider {
     width: 100%;
     padding-top: 30rem;
@@ -525,7 +529,13 @@
   
   
   
-  
+  /* @media (max-width: 00px) {
+    .mobilesection{
+      display: block;
+      width: 100vw;
+      height: 50vh;
+    }
+  } */
   
   
   
