@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HcpTravel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./contact.html">Cancellation</a></li>
+        <li><a href="./contact.html" >1-888-652-3933</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="no-hover"><img class="logo" src="./assets/Hcp-logo.png" alt=""></a></li>
+            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./about.html">About</a></li>
+            <li class="hideOnMobile"><a href="./contact.html">Contact</a></li>
+            <li class="hideOnMobile"><a href="./contact.html">Cancellation</a></li>
+            <li class="hideOnMobile"><a href="./contact.html" id="number">+1-888-652-3933</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <section class="partners-page">
+        <div class="partners-text">
+            <h1>HcpTravel Partners</h1>
+            <div class="partnum">
+                <!-- <img src="" alt=""> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+          <!-- Footer Column 1: About -->
+          <div class="footer-column">
+              <h4>About HcpTravel</h4>
+              <p>HcpTravel is your trusted partner for booking flights, accommodations, and travel experiences. We offer seamless and affordable booking solutions for travelers worldwide.</p>
+          </div>
+  
+          <!-- Footer Column 2: Quick Links -->
+          <div class="footer-column">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./contact.html">Support</a></li>
+              </ul>
+          </div>
+  
+          <!-- Footer Column 3: Contact -->
+          <div class="footer-column">
+              <h4>Contact Us</h4>
+              <p><strong>Email:</strong> Booking@hcptravel.com</p>
+              <p><strong>Phone:</strong> +1-888-652-3933</p>
+              <p><strong>Address:</strong> hcp travel reservations 259 Gamble Ave East York. ON M4J 2P4 </p>
+          </div>
+
+          <div class="footer-column">
+            <img src="./assets/Hcp-logo.png" alt="HCPTRAVEL" class="footer-logo">
+          </div>
+      </div>
+  
+      <div class="footer-bottom">
+          <p>&copy; 2024 HcpTravel.&nbsp;&nbsp; All Rights Reserved.&nbsp;</p>
+          <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+          </div>
+      </div>
+  </footer>
+  
+  <div id="call">
+    <a href="tel:+1-888-652-3933"><img src="./assets/call.png" alt=""></a>
+  </div>
+
+</body>
+<script>
+    let partners = [
+    {
+      src: "./assets/partners/XP (1).png"
+    },
+    {
+      src: "./assets/partners/2B.png"
+    },
+    {
+      src: "./assets/partners/3C.png"
+    },{
+      src: "./assets/partners/A6.png"
+    },{
+      src: "./assets/partners/A5.png"
+    },{
+      src: "./assets/partners/A3.png"
+    },{
+      src: "./assets/partners/9I.png"
+    },{
+      src: "./assets/partners/7P.png"
+    },{
+      src: "./assets/partners/4A.png"
+    },{
+      src: "./assets/partners/3O.png"
+    },{
+      src: "./assets/partners/IS.png"
+    },{
+      src: "./assets/partners/XP (1).png"
+    },
+    {
+      src: "./assets/partners/AM.png"
+    },
+    {
+      src: "./assets/partners/AC.png"
+    },
+    {
+      src: "./assets/partners/GT.png"
+    },
+    {
+      src: "./assets/partners/XP.png"
+    },{
+      src: "./assets/partners/YN.png"
+    },{
+      src: "./assets/partners/TS.png"
+    },{
+      src: "./assets/partners/NH.png"
+    },{
+      src: "./assets/partners/TN.png"
+    },{
+      src: "./assets/partners/UX.png"
+    }
+    ,
+    {
+      src: "./assets/partners/SB.png"
+    },
+    {   
+      src: "./assets/partners/RV.png"    
+    },
+    {   
+      src: "./assets/partners/RS.png"    
+    },
+    {   
+      src: "./assets/partners/RF.png"    
+    },
+    {   
+      src: "./assets/partners/QQ.png"    
+    },
+    {   
+      src: "./assets/partners/PX.png"    
+    },
+    {   
+      src: "./assets/partners/PA.png"    
+    },
+    {   
+      src: "./assets/partners/P4.png"    
+    },
+    {   
+      src: "./assets/assets/partners/OZ.png"    
+    },
+    {   
+      src: "./assets/partners/NZ.png"    
+    },
+    {   
+      src: "./assets/partners/NQ.png"    
+    },
+    {   
+      src: "./assets/partners/NH.png"    
+    },
+    {   
+      src: "./assets/partners/MZ.png"    
+    },
+    {   
+      src: "./assets/partners/MK.png"    
+    },
+    {   
+      src: "./assets/partners/LZ.png"    
+    },
+    {   
+      src: "./assets/partners/JU.png"    
+    },
+    {   
+      src: "./assets/partners/KP.png"    
+    },
+    {   
+      src: "./assets/partners/KC.png"    
+    },
+  ]
+
+
+  partners.forEach((partner) => {
+    const img = document.createElement('img');
+    img.src = partner.src;
+    document.querySelector('.partnum').appendChild(img);
+  })
+</script>
+<script src="./script.js"></script>
+</html>
