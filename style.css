@@ -296,7 +296,29 @@
     width: calc(300px * 6); /* Adjust width based on number of images */
     animation: scroll 15s linear infinite;
   }
+
+  /* .interaction-slider{
+    position: fixed;
+    top: 50%;
+    left: 10%;
+  } */
   
+
+   /* @media screen and (max-width: 800px) {
+    .interaction-slider{
+      position: fixed;
+      top: 25%;
+      left: 10%;
+    }
+  } */
+
+  /* @media screen and (min-width: 769px) {
+    .interaction-slider{
+      position: absolute;
+      top: 24%;
+      left: 10%;
+    }
+  }  */
   .slide {
     min-width: 300px;
     margin: 0 10px;
@@ -389,10 +411,46 @@
     padding: 50px 10rem;
     margin-top: 10rem;
     background-color: #f8f8f8; /* Light background */
+    position: relative;
   }
+
+  .interaction{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+
+
+@media screen and (max-width: 1200px) {
+  .interaction{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+  }
+}
+
+/* .half-moon-text span {
+    position: absolute;
+    transform-origin: bottom center;
+     Origin point for rotation 
+    bottom: 0;
+    padding-right: .5rem;
+    font-size: 24px;
+    font-weight: bold;
+} */
+
+/* Position and rotate each letter to form a half-moon curve */
+/* .half-moon-text span:nth-child(1) { transform: rotate(-60deg); left: 5%; }
+        .half-moon-text span:nth-child(2) { transform: rotate(-45deg); left: 15%; }
+        .half-moon-text span:nth-child(3) { transform: rotate(-30deg); left: 27%; }
+        .half-moon-text span:nth-child(4) { transform: rotate(-15deg); left: 40%; }
+        .half-moon-text span:nth-child(5) { transform: rotate(0deg); left: 52%; }
+        .half-moon-text span:nth-child(6) { transform: rotate(15deg); left: 64%; }
+        .half-moon-text span:nth-child(7) { transform: rotate(30deg); left: 77%; }
+        .half-moon-text span:nth-child(8) { transform: rotate(45deg); left: 89%; } */
   
   .why-travel h2 {
-    font-size: 32px;
+    font-size: 3rem;
     margin-bottom: 30px;
     color: #333; /* Darker color for the heading */
   }
@@ -492,6 +550,13 @@
     .features-container {
         flex-direction: column;
     }
+
+    .why-travel h2 {
+      font-size: 2rem;}
+
+      .overlay-slide h3{
+        font-size: 5vw;
+      }
   }
   
   /* Responsive design for screens smaller than 500px */
@@ -538,7 +603,7 @@
     }
   
     .feature-box {
-      padding: 10px;
+      /* padding: 10px; */
       max-width: 80%; /* Ensure full width usage */
       width: 80%; /* Fix width to ensure no layout break */
     }
@@ -627,6 +692,11 @@
   
   .footer-column ul li a:hover {
     color: #f8ba00; /* Highlight on hover */
+  }
+
+
+  .footer-logo{
+    height: 25vh;
   }
   
   /* Social Media Icons */
