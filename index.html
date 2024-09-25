@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navbar</title>
+  <title>HcpTravel</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav id="navbar">
@@ -38,7 +41,7 @@
 
 
     <section class="form-section"> 
-      <form action="" class="booking-form">
+      <form action="/submit" class="booking-form" method="post">
         <div class="form-group">
           <label for="origin">From</label>
           <input type="text" id="origin" placeholder="Origin" required>
@@ -74,7 +77,7 @@
         </div>
         <div class="form-group">
             <label for="return">Return</label>
-            <input type="date" id="return" required>
+            <input type="date" id="return" >
         </div>
         <input type="submit" id="searchBtn" value="Sumbit"></input>
       </form>
@@ -87,55 +90,91 @@
   <div class="slider">
     <div class="slider-track">
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Flight Change</h3>
+        </div>
         <img src="./assets/delay.jpeg" alt="Flight Change">
-        <p>Flight Change</p>
+        <!-- <p>Flight Change</p> -->
       </div>
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Change Flight Date</h3>
+        </div>
         <img src="./assets/change.jpeg" alt="Change Flight Date">
-        <p>Change Flight Date</p>
+        <!-- <p>Change Flight Date</p> -->
       </div>
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Flight Delay</h3>
+        </div>
         <img src="./assets/flightChange.jpeg" alt="Flight Delay">
-        <p>Flight Delay</p>
+        <!-- <p>Flight Delay</p> -->
       </div>
       <!-- Repeat slides to create the infinite effect -->
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Flight Change</h3>
+        </div>
         <img src="./assets/delay.jpeg" alt="Flight Change">
-        <p>Flight Change</p>
+        <!-- <p>Flight Change</p> -->
       </div>
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Change Flight Date</h3>
+        </div>
         <img src="./assets/change.jpeg" alt="Change Flight Date">
-        <p>Change Flight Date</p>
+        <!-- <p>Change Flight Date</p> -->
       </div>
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Flight Delay</h3>
+        </div>
         <img src="./assets/flightChange.jpeg" alt="Flight Delay">
-        <p>Flight Delay</p>
+        <!-- <p>Flight Delay</p> -->
       </div>
       <!-- Repeat slides to create the infinite effect -->
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Flight Change</h3>
+        </div>
         <img src="./assets/delay.jpeg" alt="Flight Change">
-        <p>Flight Change</p>
+        <!-- <p>Flight Change</p> -->
       </div>
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Change Flight Date</h3>
+        </div>
         <img src="./assets/change.jpeg" alt="Change Flight Date">
-        <p>Change Flight Date</p>
+        <!-- <p>Change Flight Date</p> -->
       </div>
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Flight Delay</h3>
+        </div>
         <img src="./assets/flightChange.jpeg" alt="Flight Delay">
-        <p>Flight Delay</p>
+        <!-- <p>Flight Delay</p> -->
       </div>
       <!-- Repeat slides to create the infinite effect -->
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Flight Change</h3>
+        </div>
         <img src="./assets/delay.jpeg" alt="Flight Change">
-        <p>Flight Change</p>
+        <!-- <p>Flight Change</p> -->
       </div>
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Change Flight Date</h3>
+        </div>
         <img src="./assets/change.jpeg" alt="Change Flight Date">
-        <p>Change Flight Date</p>
+        <!-- <p>Change Flight Date</p> -->
       </div>
       <div class="slide">
+        <div class="overlay-slide">
+          <h3>Flight Delay</h3>
+        </div>
         <img src="./assets/flightChange.jpeg" alt="Flight Delay">
-        <p>Flight Delay</p>
+        <!-- <p>Flight Delay</p> -->
       </div>
     </div>
   </div>
@@ -148,44 +187,56 @@
       <div class="features-container">
           <!-- Feature 1 -->
           <div class="feature-box">
-              <img src="./assets/1.jpeg" alt="Simplify Your Booking Experience" />
+            <div class="overlay">
               <h3>Simplify Your Booking Experience</h3>
-              <p>Feel the flexibility and simplicity throughout your booking process.</p>
+              <!-- <p>Feel the flexibility and simplicity throughout your booking process.</p> -->
+            </div>
+              <img src="./assets/1.jpeg" alt="Simplify Your Booking Experience" />
           </div>
 
           <!-- Feature 2 -->
           <div class="feature-box">
-              <img src="./assets/2.jpeg" alt="Wide Selections of Travel Product" />
+            <div class="overlay">
               <h3>Wide Selections of Travel Product</h3>
-              <p>Enjoy your memorable moments with millions of favorable flights and accommodations.</p>
+              <!-- <p>Enjoy your memorable moments with millions of favorable flights and accommodations.</p> -->
+            </div>
+              <img src="./assets/2.jpeg" alt="Wide Selections of Travel Product" />
           </div>
 
           <!-- Feature 3 -->
           <div class="feature-box">
-              <img src="./assets/3.jpeg" alt="Exclusive Offer Everyday" />
+            <div class="overlay">
               <h3>Exclusive Offer Everyday</h3>
-              <p>Various daily promo with competitive price for all travelers.</p>
+              <!-- <p>Various daily promo with competitive price for all travelers.</p> -->
+            </div>
+              <img src="./assets/3.jpeg" alt="Exclusive Offer Everyday" />
           </div>
 
           <!-- Feature 4 -->
           <div class="feature-box">
-              <img src="./assets/4.jpeg" alt="Online Booking Expert" />
+            <div class="overlay">
               <h3>Online Booking Expert</h3>
-              <p>Together with our credible partners, fulfilling countless travelers' needs since 2011.</p>
+              <!-- <p>Together with our credible partners, fulfilling countless travelers' needs since 2011.</p> -->
+            </div>
+              <img src="./assets/4.jpeg" alt="Online Booking Expert" />
           </div>
 
           <!-- Feature 5 -->
           <div class="feature-box">
-              <img src="./assets/6.jpeg" alt="Affectionate Customer Support" />
+            <div class="overlay">
               <h3>Affectionate Customer Support</h3>
-              <p>Giving best assistance, our customer support is available 24/7 with your local language.</p>
+              <!-- <p>Giving best assistance, our customer support is available 24/7 with your local language.</p> -->
+            </div>
+              <img src="./assets/6.jpeg" alt="Affectionate Customer Support" />
           </div>
 
           <!-- Feature 6 -->
           <div class="feature-box">
-              <img src="./assets/5.jpeg" alt="World's Local Booking Excitement" />
+            <div class="overlay">
               <h3>World's Local Booking Excitement</h3>
-              <p>Stress-free booking experience with local payment, currency, and language.</p>
+              <!-- <p>Stress-free booking experience with local payment, currency, and language.</p> -->
+            </div>
+              <img src="./assets/5.jpeg" alt="World's Local Booking Excitement" />
           </div>
       </div>
     </section>

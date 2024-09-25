@@ -21,3 +21,29 @@ function showSidebar(){
     sliderTrack.style.animationPlayState = 'running';
   });
   
+
+  document.getElementById('booking-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    let origin = document.getElementById('origin').value;
+    let destination = document.getElementById('destination').value;
+    let email = document.getElementById('email').value;
+    let adult = document.getElementById('adult').value;
+    let child = document.getElementById('child').value;
+    let travelClass = document.getElementById('class').value; 
+    let departure = document.getElementById('departure').value; 
+    let returnDate = document.getElementById('return').value; 
+    // Add other form fields here
+
+    if (!origin || !destination || !email || adult|| child || !travelClass || !departure ) {
+        alert('Please fill in all fields');
+        return;
+    }
+
+    // If validation is successful
+    alert('Form submitted successfully');
+    // this.submit(); // Proceed with form submission
+
+    // Clear all fields after successful submission
+    this.reset();
+});
