@@ -416,16 +416,24 @@
 
   .interaction{
     position: absolute;
-    top: 10%;
+    top: 3.5%;
     left: 10%;
   }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 500px) {
   .interaction{
     position: absolute;
-    top: 3%;
+    top: 4%;
     left: 3%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .interaction{
+    position: absolute;
+    top: 12%;
+    left: 7%;
   }
 }
 
