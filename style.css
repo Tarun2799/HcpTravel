@@ -13,6 +13,7 @@
   body{
     width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
     /* background: url('laptop.jpg'); */
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
@@ -214,6 +215,7 @@
     display: flex;
     flex-wrap: wrap;
     /* max-width: 100vw; */
+    width: 100%; /* Ensure full width within the viewport */
   
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
@@ -275,11 +277,12 @@
   
   .mobilesection{
       display: block;
-      width: 100vw;
+      /* width: 100vw; */
+      width: 100%; /* Use 100% instead of 100vw */
       height: 30vh;
   }
 
-  
+
   .slider {
     width: 100%;
     padding-top: 30rem;
@@ -289,6 +292,7 @@
   
   .slider-track {
     display: flex;
+    width: max-content;
     width: calc(300px * 6); /* Adjust width based on number of images */
     animation: scroll 15s linear infinite;
   }
