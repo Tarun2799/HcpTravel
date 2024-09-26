@@ -9,6 +9,238 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    /* About Section Styles */
+.about-section {
+  background-color: white;
+  padding: 60px 20px;
+  color: #333;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.about-text {
+  flex: 1 1 50%;
+  padding-right: 20px;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.about-text h1 {
+  color: #f8ba00;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.about-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-text ul li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.about-image {
+  flex: 1 1 40%;
+  text-align: center;
+  animation: fadeInRight 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.about-image:hover {
+    transform: translateY(-8px);
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
+}
+.about-image img:hover {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+  
+}
+
+/* Key Features Section */
+/* .about-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature-box {
+  background-color: #f8ba00;
+  color: white;
+  flex: 1 1 23%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.feature-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  color: #fff;
+} */
+.features-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* For large screens - Horizontal layout */
+    gap: 30px;
+}
+
+.feature-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #f8ba00;
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* For Medium screens (2-2 Grid) */
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 10vw;
+    }
+}
+
+/* For Smaller Mobile screens (1-1 Grid) */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        padding-left: 18vw;
+
+    }
+}
+
+
+
+/* Keyframe Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-text, .about-image {
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-text {
+    padding-bottom: 20px;
+  }
+
+  .feature-box {
+    flex: 1 1 100%;
+  }
+}
+
+  </style>
 </head>
 <body>
     <nav id="navbar">
@@ -31,9 +263,77 @@
         </ul>
     </nav>
 
-    <div class="body" style="height: 50vh;">
-        <h1 style="padding: 10vh 40vw;">ABOUT SECTION COMES SOON</h1>
-    </div>
+    <section class="about-section">
+      <div class="about-container">
+        <div class="about-content">
+          <!-- Left Side: Content -->
+          <div class="about-text">
+            <h1>About Us</h1>
+            <p>hcptravel.com is an online travel portal catering to passengers all around the world. Our team consists of experienced travel professionals available 24/7 to meet your travel needs.</p>
+            <ul>
+              <li><strong>Customized Travel Itineraries</strong>: Tailored to your preference, including flights, hotels, and more.</li>
+              <li><strong>Affordable Plans</strong>: We offer budget-friendly options for both domestic and international destinations.</li>
+              <li><strong>Safe & Secure</strong>: Enjoy safe and secure booking experiences with enhanced SSL security.</li>
+              <li><strong>24/7 Customer Assistance</strong>: We are always available via email or phone to support you.</li>
+            </ul>
+          </div>
+          <!-- Right Side: Image -->
+          <div class="about-image">
+            <img src="./assets/delay1.jpg" alt="Airplane Image" />
+          </div>
+        </div>
+        
+        <section class="features-section">
+          <div class="container">
+              <h2 class="section-heading">Why Choose Us</h2>
+              <div class="features-grid">
+                  <div class="feature-box">
+                      <i class="fas fa-phone-alt feature-icon"></i>
+                      <h3>24/7 Customer Assistance</h3>
+                      <p>Our knowledgeable team works round the clock. You can reach us through email or phone number available.</p>
+                  </div>
+                  <div class="feature-box">
+                      <i class="fas fa-dollar-sign feature-icon"></i>
+                      <h3>Affordable Plans</h3>
+                      <p>We offer affordable plans for both domestic & international travel destinations.</p>
+                  </div>
+                  <div class="feature-box">
+                      <i class="fas fa-lock feature-icon"></i>
+                      <h3>Safe & Secure</h3>
+                      <p>Our website is completely safe & secure, with enhanced SSL security to protect your data.</p>
+                  </div>
+                  <div class="feature-box">
+                      <i class="fas fa-map-marked-alt feature-icon"></i>
+                      <h3>Customized Travel Itineraries</h3>
+                      <p>We offer customized travel itineraries as per your choice & preference for the best experience.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+        <!-- Key Points Section -->
+        <!-- <div class="about-features">
+          <div class="feature-box">
+            <h3>24/7 Customer Assistance</h3>
+            <p>Contact us at any time through email or phone for immediate assistance.</p>
+          </div>
+          <div class="feature-box">
+            <h3>Affordable Travel Plans</h3>
+            <p>We offer travel plans that are designed to fit your budget without compromising on quality.</p>
+          </div>
+          <div class="feature-box">
+            <h3>Safe & Secure</h3>
+            <p>Our website is SSL secured, ensuring all your transactions are safe.</p>
+          </div>
+          <div class="feature-box">
+            <h3>Customized Itineraries</h3>
+            <p>Tailor your trip exactly how you like it, with a variety of options to choose from.</p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    
+    
 
     <footer class="site-footer">
       <div class="footer-container">

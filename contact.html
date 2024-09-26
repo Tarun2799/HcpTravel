@@ -9,6 +9,127 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    /* Contact Us Page: Main Section */
+.contact-container {
+  background-color: white;
+  padding: 40px 20px;
+  color: #333;
+}
+
+h1, h2 {
+  color: #f8ba00;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Contact Info Section */
+.contact-info {
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.contact-detail {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.contact-detail a {
+  color: #f8ba00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Map Container */
+.map-container {
+  margin-top: 30px;
+}
+
+/* FAQ Accordion Section */
+.faq-section {
+  margin-top: 30px;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.accordion-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.accordion-item p {
+  display: none;
+  margin-top: 10px;
+  color: #666;
+}
+
+.accordion-item.active {
+  background-color: #f8ba00;
+  transition: all 0.3s ease;
+ 
+}
+
+.accordion-item.active h3 {
+  color: white;
+}
+
+.accordion-item.active p {
+  display: block;
+  color: white;
+}
+
+/* Keyframe for Simple Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-content {
+    padding: 10px;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+
+  .accordion-item {
+    padding: 10px;
+  }
+}
+
+  </style>
+  
+  
 </head>
 <body>
     <nav id="navbar">
@@ -31,9 +152,45 @@
         </ul>
     </nav>
 
-    <div class="body" style="height: 50vh;">
-        <h1 style="margin: 10vh 40vw;">Call Us:<br> +1-888-652-3933</h1>
+    <!-- Contact Us Page: Main Section -->
+<section class="contact-container">
+  <div class="contact-content">
+    <h1>Contact Us</h1>
+
+    <!-- Contact Info Section with Animation -->
+    <div class="contact-info">
+      <p class="contact-detail email">Email: <a href="mailto:Booking@hcptravel.com">Booking@hcptravel.com</a></p>
+      <p class="contact-detail phone">Phone: <a href="tel:+18886523933">1-888-652-3933</a></p>
     </div>
+
+    <!-- Google Map -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8356568940754!2d-122.4212789846162!3d37.77593397975859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085817c1b29b8d7%3A0x1234567890abcdef!2sHCP%20Travel!5e0!3m2!1sen!2sus!4v1617985230847!5m2!1sen!2sus"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <h3>How can I contact customer support?</h3>
+          <p>Our customer support team is available 24/7 via phone or email. Reach us at 1-888-652-3933 or Booking@hcptravel.com.</p>
+        </div>
+        <div class="accordion-item">
+          <h3>How do I cancel my booking?</h3>
+          <p>To cancel your booking, contact us through phone or email. Please allow 7-10 business days for processing.</p>
+        </div>
+        <div class="accordion-item">
+          <h3>What is your refund policy?</h3>
+          <p>Refunds depend on the terms of the service providers. Please check our cancellation policy page for more details.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
 
     <footer class="site-footer">
       <div class="footer-container">
@@ -82,5 +239,15 @@
   </div>
 
 </body>
+
 <script src="./script.js"></script>
+<script>
+  document.querySelectorAll('.accordion-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    });
+  });
+</script>
 </html>
