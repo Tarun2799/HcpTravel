@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HcpTravel</title>
+  <link rel="stylesheet" href="./partners.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #4a4a4a;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #f8ba00;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #f8ba00;
+    }
+
+    .contact-info {
+      background-color: #FEC870;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .contact-info p {
+      font-weight: 600;
+      color: #747474;
+    }
+
+    .accordion {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion-header {
+      padding: 15px;
+      background-color: #FEC870;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #747474;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .accordion-header:hover {
+      background-color: #fdb541;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background-color: #f4f4f4;
+      padding: 0 15px;
+    }
+
+    .accordion-content p {
+      padding: 15px 0;
+      color: #4a4a4a;
+    }
+
+    .active .accordion-content {
+      max-height: 500px; /* Adjust height based on content */
+    }
+
+    .rotate {
+      transform: rotate(90deg);
+      transition: transform 0.3s ease;
+    }
+
+    .rotate-back {
+      transform: rotate(0deg);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .accordion-header {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./cancellation.html">Cancellation</a></li>
+        <li><a href="./contact.html" >1-888-652-3933</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="no-hover"><img class="logo" src="./assets/Hcp-logo.png" alt=""></a></li>
+            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./about.html">About</a></li>
+            <li class="hideOnMobile"><a href="./contact.html">Contact</a></li>
+            <li class="hideOnMobile"><a href="./cancellation.html">Cancellation</a></li>
+            <li class="hideOnMobile"><a href="./contact.html" id="number">+1-888-652-3933</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>Cancellation Policy</h1>
+        
+        <div class="contact-info">
+          <p>For any assistance, contact us at <br> Phone: <a href="tel:+1-888-652-3933" style="color: #747474">+1-888-652-3933</a>  | Email: <a href="mailto:Booking@hcptravel.com" style="color: #747474;">Booking@hcptravel.com</a></p>
+        </div>
+    
+        <div class="accordion">
+          <div class="accordion-header">
+            <span>General Cancellation Policy</span>
+            <span class="icon">&#x25B6;</span>
+          </div>
+          <div class="accordion-content">
+            <p>Our general cancellation policy applies to all travel services booked through hcptravel.com, including flights, hotels, car rentals, and vacation packages. Please review the specific terms and conditions for each service type outlined below.</p>
+          </div>
+        </div>
+    
+        <div class="accordion">
+          <div class="accordion-header">
+            <span>Flight Cancellations</span>
+            <span class="icon">&#x25B6;</span>
+          </div>
+          <div class="accordion-content">
+            <p>The ability to cancel and receive a refund or credit depends on the airline’s specific cancellation policy. Most airlines allow free cancellations within 24 hours of booking.
+                <b>After the 24-hour window, non-refundable tickets </b>may only be eligible for a credit towards future travel, subject to the airline’s policy.
+                <br>
+                <br>
+                <B><em>Cancellation Fees:</em></B>
+                
+                Airlines may charge cancellation fees based on the fare type and airline policy. These fees will be deducted from any refund or credit.
+                <br>
+                <br>
+                <B><em>Process:</em></B>
+                
+                To cancel a flight, contact our customer service team at <b>+1-888-652-3933</b> or email us at <b>Booking@hcptravel.com</b>. <br>
+                Please allow 7-10 business days for processing your cancellation request.</p>
+          </div>
+        </div>
+    
+        <div class="accordion">
+          <div class="accordion-header">
+            <span>Hotel Cancellations</span>
+            <span class="icon">&#x25B6;</span>
+          </div>
+          <div class="accordion-content">
+            <p>Hotel cancellation policies vary by property and are provided at the time of booking. Some hotels offer free cancellation up to a certain date, while others may charge a cancellation fee.
+                Non-refundable bookings typically cannot be canceled for a refund.
+                <br>
+                <br>
+                <em><b>Cancellation Fees:</b></em>
+                
+                Any applicable cancellation fees will be deducted from the refund amount.
+                <br>
+                <br>
+                <em><b>Process:</b></em>
+                
+                To cancel a hotel reservation, contact our customer service team at <b>+1-888-652-3933</b> or email us at <B>Booking@hcptravel.com</B>. <br>
+                Please allow 7-10 business days for processing your cancellation request.</p>
+          </div>
+        </div>
+    
+        <div class="accordion">
+          <div class="accordion-header">
+            <span>Car Rental Cancellations</span>
+            <span class="icon">&#x25B6;</span>
+          </div>
+          <div class="accordion-content">
+            <p>Car rental cancellation policies vary by company. Most rental companies allow free cancellation up to a certain time before the pick-up date.
+                Non-refundable rentals may not be eligible for cancellation.
+                <br>
+                <br>
+                <em><b>Cancellation Fees:</b></em>
+                
+                Cancellation fees, if applicable, will be deducted from the refund amount.
+                <br>
+                <br>
+                <em><b>Process:</b></em>
+                
+                To cancel a car rental, contact our customer service team at <b>+1-888-652-3933</b> or email us at <B>Booking@hcptravel.com</B>. <br>
+                Please allow 7-10 business days for processing your cancellation request.</p>
+          </div>
+        </div>
+    
+        <div class="accordion">
+          <div class="accordion-header">
+            <span>Vacation Package Cancellations</span>
+            <span class="icon">&#x25B6;</span>
+          </div>
+          <div class="accordion-content">
+            <p>Vacation package cancellation policies depend on the individual policies of the service providers included in the package (e.g., airlines, hotels, car rental companies).
+                Some components of the package may be non-refundable.
+                <br>
+                <br>
+                <em><b>Cancellation Fees:</b></em>
+                
+                Cancellation fees will be based on the policies of the individual service providers and will be deducted from the refund amount.
+                <br>
+                <br>
+                <em><b>Process:</b></em>
+                
+                To cancel a vacation package, contact our customer service team at <b>+1-888-652-3933</b> or email us at <B>Booking@hcptravel.com</B>. <br>
+                Please allow 7-10 business days for processing your cancellation request.</p>
+          </div>
+        </div>
+    
+        <div class="accordion">
+          <div class="accordion-header">
+            <span>Special Circumstances</span>
+            <span class="icon">&#x25B6;</span>
+          </div>
+          <div class="accordion-content">
+            <p>In cases of medical emergencies, we may request supporting documentation, such as a doctor’s note, to process a cancellation and potential refund.
+                <br>
+                <br>
+                <em><b>Force Majeure:</b></em>
+                
+                In the event of force majeure (e.g., natural disasters, pandemics), cancellation policies may be subject to change based on the policies of the service providers.
+                Thank you for choosing hcptravel.com. We are committed to providing you with exceptional service and support.</p>
+          </div>
+        </div>
+      </div>
+    
+
+    <footer class="site-footer">
+      <div class="footer-container">
+          <!-- Footer Column 1: About -->
+          <div class="footer-column">
+              <h4>About HcpTravel</h4>
+              <p>HcpTravel is your trusted partner for booking flights, accommodations, and travel experiences. We offer seamless and affordable booking solutions for travelers worldwide.</p>
+          </div>
+  
+          <!-- Footer Column 2: Quick Links -->
+          <div class="footer-column">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./cancellation.html">Cancellation</a></li>
+              </ul>
+          </div>
+  
+          <!-- Footer Column 3: Contact -->
+          <div class="footer-column">
+              <h4>Contact Us</h4>
+              <p><strong>Email:</strong> Booking@hcptravel.com</p>
+              <p><strong>Phone:</strong> +1-888-652-3933</p>
+              <p><strong>Address:</strong> hcp travel reservations 259 Gamble Ave East York. ON M4J 2P4 </p>
+          </div>
+
+          <div class="footer-column">
+            <img src="./assets/Hcp-logo.png" alt="HCPTRAVEL" class="footer-logo">
+          </div>
+      </div>
+  
+      <div class="footer-bottom">
+          <p>&copy; 2024 HcpTravel.&nbsp;&nbsp; All Rights Reserved.&nbsp;</p>
+          <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+          </div>
+      </div>
+  </footer>
+  
+  <div id="call">
+    <a href="tel:+1-888-652-3933"><img src="./assets/call.png" alt=""></a>
+  </div>
+
+</body>
+<script>
+  document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const accordionItem = header.parentElement;
+        const content = accordionItem.querySelector('.accordion-content');
+        const icon = header.querySelector('.icon');
+
+        accordionItem.classList.toggle('active');
+        if (accordionItem.classList.contains('active')) {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.classList.add('rotate');
+        } else {
+          content.style.maxHeight = 0;
+          icon.classList.remove('rotate');
+        }
+      });
+    });
+</script>
+<script src="./script.js"></script>
+</html>

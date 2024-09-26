@@ -23,57 +23,57 @@ function showSidebar(){
   
 
 
-  let partners = [
-    {
-      src: "./assets/partners/XP (1).png"
-    },
-    {
-      src: "./assets/partners/2B.png"
-    },
-    {
-      src: "./assets/partners/3C.png"
-    },{
-      src: "./assets/partners/A6.png"
-    },{
-      src: "./assets/partners/A5.png"
-    },{
-      src: "./assets/partners/A3.png"
-    },{
-      src: "./assets/partners/9I.png"
-    },{
-      src: "./assets/partners/7P.png"
-    },{
-      src: "./assets/partners/4A.png"
-    },{
-      src: "./assets/partners/3O.png"
-    },{
-      src: "./assets/partners/3C.png"
-    },{
-      src: "./assets/partners/XP (1).png"
-    },
-    {
-      src: "./assets/partners/AM.png"
-    },
-    {
-      src: "./assets/partners/AC.png"
-    },
-    {
-      src: "./assets/partners/GT.png"
-    },
-    {
-      src: "./assets/partners/XP.png"
-    },{
-      src: "./assets/partners/YN.png"
-    },{
-      src: "./assets/partners/TS.png"
-    },{
-      src: "./assets/partners/NH.png"
-    },{
-      src: "./assets/partners/TN.png"
-    },{
-      src: "./assets/partners/UX.png"
-    }
-  ]
+  // let partners = [
+  //   {
+  //     src: "./assets/partners/XP (1).png"
+  //   },
+  //   {
+  //     src: "./assets/partners/2B.png"
+  //   },
+  //   {
+  //     src: "./assets/partners/3C.png"
+  //   },{
+  //     src: "./assets/partners/A6.png"
+  //   },{
+  //     src: "./assets/partners/A5.png"
+  //   },{
+  //     src: "./assets/partners/A3.png"
+  //   },{
+  //     src: "./assets/partners/9I.png"
+  //   },{
+  //     src: "./assets/partners/7P.png"
+  //   },{
+  //     src: "./assets/partners/4A.png"
+  //   },{
+  //     src: "./assets/partners/3O.png"
+  //   },{
+  //     src: "./assets/partners/3C.png"
+  //   },{
+  //     src: "./assets/partners/XP (1).png"
+  //   },
+  //   {
+  //     src: "./assets/partners/AM.png"
+  //   },
+  //   {
+  //     src: "./assets/partners/AC.png"
+  //   },
+  //   {
+  //     src: "./assets/partners/GT.png"
+  //   },
+  //   {
+  //     src: "./assets/partners/XP.png"
+  //   },{
+  //     src: "./assets/partners/YN.png"
+  //   },{
+  //     src: "./assets/partners/TS.png"
+  //   },{
+  //     src: "./assets/partners/NH.png"
+  //   },{
+  //     src: "./assets/partners/TN.png"
+  //   },{
+  //     src: "./assets/partners/UX.png"
+  //   }
+  // ]
 
 
 
