@@ -328,9 +328,26 @@
         justify-content: center;
         padding: 2rem 2rem;
         gap: 3rem;
-        width: 50%;
+        width: 80%;
         height: 100%;
         margin: 2rem 0;
+
+
+        span{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          img{
+            margin-bottom: 3px;
+          }
+          h6{
+            color: gray;
+            /* font-size: 1.5vw; */
+            font-weight: 400;
+          }
+        }
       }
     }
   }
@@ -339,7 +356,7 @@
 @media (max-width: 1200px) {
   .partnum {
     gap: 1.5rem; /* Reduce gap on medium screens */
-    min-width: 400px;
+    min-width: 600px;
     height: 100%;
   }
 }
