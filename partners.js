@@ -64,7 +64,7 @@ function hideAllAlphabets() {
       document.querySelector(`#${letter}`).style.display = 'flex';
       
       // Change the background color of the clicked button
-      event.target.style.backgroundColor = '#f8ba00';
+      event.target.style.backgroundColor = '#e40b0bdb';
     }
   });
   

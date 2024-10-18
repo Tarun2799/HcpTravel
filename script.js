@@ -1,7 +1,9 @@
 function showSidebar(){
     const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
-    sidebar.style.transition = 'all 0.5s ease-in-out'
+    if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+      sidebar.style.display = 'flex';
+      sidebar.style.transition = 'all 0.5s ease-in-out';
+  }
   }
   function hideSidebar(){
     const sidebar = document.querySelector('.sidebar')
