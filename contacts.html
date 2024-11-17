@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HcpTravel</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-bg-color: #E40B0C;
+    }
+
+    /* Contact Us Page: Main Section */
+    .contact-container {
+      background-color: white;
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: var(--primary-bg-color);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666;
+      text-align: center;
+    }
+
+    .contact-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Contact Info Section */
+    .contact-info {
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .contact-detail {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .contact-detail a {
+      color: var(--primary-bg-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: var(--primary-bg-color);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #d40a0b;
+    }
+
+    /* Map Container */
+    .map-container {
+      margin-top: 30px;
+    }
+
+    /* FAQ Accordion Section */
+    .faq-section {
+      margin-top: 30px;
+    }
+
+    .accordion-item {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      background-color: #f9f9f9;
+      transition: background-color 0.3s ease;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .accordion-item h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .accordion-item p {
+      display: none;
+      margin-top: 10px;
+      color: #666;
+    }
+
+    .accordion-item.active {
+      background-color: var(--primary-bg-color);
+      transition: all 0.3s ease;
+    }
+
+    .accordion-item.active h3 {
+      color: white;
+    }
+
+    .accordion-item.active p {
+      display: block;
+      color: white;
+    }
+
+    /* Keyframe for Simple Animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact-content {
+        padding: 10px;
+      }
+
+      .map-container iframe {
+        height: 250px;
+      }
+
+      .accordion-item {
+        padding: 10px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./cancellation.html">Cancellation</a></li>
+            <li><a href="./contact.html">1-888-652-3933</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="no-hover"><img class="logo" src="./assets/Hcp-logo.png" alt=""></a></li>
+            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./about.html">About</a></li>
+            <li class="hideOnMobile"><a href="./contact.html">Contact</a></li>
+            <li class="hideOnMobile"><a href="./cancellation.html">Cancellation</a></li>
+            <li class="hideOnMobile"><a href="./contact.html" id="number">+1-888-652-3933</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Us Page: Main Section -->
+    <section class="contact-container">
+      <div class="contact-content">
+        <h1>Contact Us</h1>
+
+        <!-- Contact Info Section with Animation -->
+        <div class="contact-info">
+          <p class="contact-detail email">Email: <a href="mailto:Booking@hcptravel.com">Booking@hcptravel.com</a></p>
+          <p class="contact-detail phone">Phone: <a href="tel:+18886523933">1-888-652-3933</a></p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Get in Touch</h2>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone (optional)">
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8356568940754!2d-122.4212789846162!3d37.77593397975859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085817c1b29b8d7%3A0x1234567890abcdef!2sHCP%20Travel!5e0!3m2!1sen!2sus!4v1617985230847!5m2!1sen!2sus"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <h2>Frequently Asked Questions</h2>
+          <div class="accordion-item">
+            <h3>What services do you offer?</h3>
+            <p>We offer a range of travel services including flight bookings, hotel reservations, and customized travel itineraries.</p>
+          </div>
+          <div class="accordion-item">
+            <h3>How can I change or cancel my booking?</h3>
+            <p>You can change or cancel your booking by contacting us directly through our support channels.</p>
+          </div>
+          <div class="accordion-item">
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept various payment methods, including credit cards, debit cards, and PayPal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Accordion Functionality
+      const accordionItems = document.querySelectorAll('.accordion-item');
+
+      accordionItems.forEach(item => {
+        item.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+    </script>
+</body>
+</html>

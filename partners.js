@@ -45,6 +45,7 @@ function hideAllAlphabets() {
   function resetButtonColors() {
     document.querySelectorAll('.alphabet-button').forEach(button => {
       button.style.backgroundColor = '';
+      button.style.color = 'gray  ';
     });
   }
   
@@ -65,6 +66,7 @@ function hideAllAlphabets() {
       
       // Change the background color of the clicked button
       event.target.style.backgroundColor = '#e40b0bdb';
+      event.target.style.color = '#ffffff';
     }
   });
   

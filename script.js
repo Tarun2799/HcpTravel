@@ -24,6 +24,99 @@ function showSidebar(){
   });
   
 
+  window.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((card, index) => {
+        setTimeout(() => {
+            card.style.transform = 'translateY(0)';
+            card.style.opacity = '1';
+        }, index * 200); // Delay each card's appearance for animation
+    });
+});
+
+
+
+// CAROUSEL
+
+// document.getElementById('next').onclick = function(){
+//   const widthItem = document.querySelector('.item').offsetWidth;
+//   document.getElementById('formList').scrollLeft += widthItem;
+// }
+// document.getElementById('prev').onclick = function(){
+//   const widthItem = document.querySelector('.item').offsetWidth;
+//   document.getElementById('formList').scrollLeft -= widthItem;
+// }
+
+
+// HOTEL
+
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const leftBtn = document.querySelector('.left-btn');
+// const rightBtn = document.querySelector('.right-btn');
+// const hotelCards = document.querySelector('.hotel-cards');
+
+// let currentScrollPosition = 0;
+// const scrollAmount = 320; // Width of one card + gap
+
+// rightBtn.addEventListener('click', () => {
+//     currentScrollPosition -= scrollAmount;
+//     hotelCards.style.transform = `translateX(${currentScrollPosition}px)`;
+// });
+
+// leftBtn.addEventListener('click', () => {
+//     currentScrollPosition += scrollAmount;
+//     hotelCards.style.transform = `translateX(${currentScrollPosition}px)`;
+// });
+
+
 
   // let partners = [
   //   {
