@@ -380,6 +380,16 @@
 
   /* Add media queries for smaller screens */
 @media (max-width: 1200px) {
+
+  .characters{
+    /* padding: 2vh; */
+
+    span{
+      margin: 1vh;
+    }
+  }
+
+  
   .partnum {
     gap: 1.5rem; /* Reduce gap on medium screens */
     min-width: 600px;
@@ -388,6 +398,16 @@
 }
 
 @media (max-width: 768px) {
+
+
+  .characters{
+    padding: 2vh;
+
+    span{
+      margin: 1vh;
+    }
+  }
+
   .partnum {
     gap: 1rem; /* Reduce gap on smaller screens */
     min-width: 400px;
@@ -395,6 +415,14 @@
 }
 
 @media (max-width: 500px) {
+
+  .characters{
+    /* padding: 2vh; */
+
+    span{
+      margin: 1vh;
+    }
+  }
   .partnum {
     gap: 0.5rem; /* Minimal gap for small screens */
     min-width: 400px;

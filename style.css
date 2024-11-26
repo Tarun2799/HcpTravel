@@ -18,6 +18,7 @@
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: #F8F8F8;
     /* background: url('laptop.jpg'); */
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
@@ -369,7 +370,7 @@
 .product-info {
   width: 100%;
   height: 100px;
-  padding-top: 10px;
+  padding-top: 0.7rem;
 }
 
 .product-brand {
@@ -431,7 +432,135 @@
   opacity: 1;
 }
 
+/* Responsive Design */
 
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+
+
+  .hotel-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .city-tabs {
+    gap: 0.8rem;
+  }
+
+  .tab {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .product-container {
+    gap: 0.8rem;
+  }
+
+  .product-card {
+    width: calc(100% / 3 - 1rem); /* 3 cards per row */
+    height: auto;
+
+  }
+
+  .product-image {
+    height: 10rem;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    width: 15vw;
+  }
+}
+
+/* Mobile Devices (480px - 767px) */
+@media (max-width: 767px) {
+
+
+  .hotel-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .city-tabs {
+    gap: 0.5rem;
+  }
+
+  .tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .product-container {
+    gap: 0.5rem;
+  }
+
+  .product-card {
+    width: calc(100% / 2 - 1rem); /* 2 cards per row */
+    height: auto;
+
+  }
+
+  .product-image {
+    height: 8rem;
+  }
+
+  .product-brand {
+    font-size: 0.9rem;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    width: 20vw;
+    height: 25vh;
+  }
+}
+
+/* Small Mobile Devices (up to 479px) */
+@media (max-width: 479px) {
+
+
+
+  .hotel-section {
+    padding: 1.5rem 3vw;
+  }
+
+  .hotel-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .city-tabs {
+    flex-direction: column; /* Stack tabs vertically */
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tab {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+    width: 90%; /* Full-width buttons */
+  }
+
+  .product-container {
+    gap: 0.5rem;
+  }
+
+  .product-card {
+    width: 100%; /* 1 card per row */
+    height: auto;
+  }
+
+  .product-image {
+    height: 7rem;
+  }
+
+  .product-brand {
+    font-size: 0.85rem;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    width: 25vw;
+    height: 25vh;
+  }
+}
 
 
 
@@ -876,28 +1005,7 @@ h2 {
     animation: scroll 15s linear infinite;
   }
 
-  /* .interaction-slider{
-    position: fixed;
-    top: 50%;
-    left: 10%;
-  } */
-  
-
-   /* @media screen and (max-width: 800px) {
-    .interaction-slider{
-      position: fixed;
-      top: 25%;
-      left: 10%;
-    }
-  } */
-
-  /* @media screen and (min-width: 769px) {
-    .interaction-slider{
-      position: absolute;
-      top: 24%;
-      left: 10%;
-    }
-  }  */
+ 
   .slide {
     min-width: 300px;
     margin: 0 10px;
@@ -981,6 +1089,56 @@ h2 {
       transform: translateX(-50%);
     }
   }
+
+
+
+  /* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .slide {
+      width: 260px;
+      max-width: 260px;
+  }
+
+  .overlay-slide h3 {
+      font-size: 2vw;
+      line-height: 2vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .slide {
+      width: 220px;
+      max-width: 220px;
+  }
+
+  .overlay-slide h3 {
+      font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+      width: 180px;
+      max-width: 180px;
+  }
+
+  .overlay-slide h3 {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide {
+      width: 140px;
+      max-width: 140px;
+  }
+
+  .overlay-slide h3 {
+      font-size: 2rem;
+      line-height: 2rem;
+  }
+}
   
   
   
@@ -1230,6 +1388,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     padding: 5rem 2rem;
+    margin: 10rem 0;
     /* margin-top: 3rem; */
     /* height: 50vh; */
     background-color: var(--primary-bg-color);
